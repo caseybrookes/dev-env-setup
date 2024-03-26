@@ -236,7 +236,7 @@ dropbox start -i; # install the dropbox daemon and start it for the first time
 sudo apt-get install awscli -y;
 
 # restore config into '~/.aws`
-mkdir -p ~/.aws
+mkdir -p ~/.aws # creates a new directory
 op get document .aws/config --output ~/.aws/config
 op get document .aws/credentials --output ~/.aws/credentials
 
